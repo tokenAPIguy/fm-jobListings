@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+:root {
+  /* Colors */
+  --darkCyan: hsl(180, 29%, 50%);
+  --grayishCyanBg: hsl(180, 52%, 96%);
+  --grayishCyanTab: hsl(180, 31%, 95%);
+  --darkGrayishCyan: hsl(180, 8%, 52%);
+  --veryDarkGrayishCyan: hsl(180, 14%, 20%);
+}
+body {
+  background-color: var(--grayishCyanBg);
+  font-family: "League Spartan", sans-serif;
+}
+.main-content {
+  height: 100vh;
+}
