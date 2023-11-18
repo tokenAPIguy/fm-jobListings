@@ -15,16 +15,22 @@ body {
   background-color: var(--grayishCyanBg);
   font-family: "League Spartan", sans-serif;
 }
+.splash {
+  width: 100%;
+}
 .main-content {
   height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* Job Listings */
 .listings-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  /* width: 75%; */
 }
 .listing {
   border-radius: 15px;
@@ -49,6 +55,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: auto;
 }
 .job-company {
   color: var(--darkCyan);
