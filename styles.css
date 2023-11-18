@@ -30,7 +30,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* width: 75%; */
 }
 .listing {
   border-radius: 15px;
@@ -47,8 +46,6 @@ body {
 }
 .listing-overview--desc {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
   text-align: right;
 }
 .listing-overview--tags {
@@ -56,6 +53,10 @@ body {
   flex-direction: row;
   align-items: center;
   margin-left: auto;
+}
+.job-intro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .job-company {
   color: var(--darkCyan);
@@ -65,6 +66,7 @@ body {
   color: var(--grayishCyanTab);
   border-radius: 100px;
   padding: 7px;
+  margin-right: 10px;
   background: var(--darkCyan);
 }
 .job-feat > span {
@@ -79,27 +81,25 @@ body {
   text-align: left;
   font-weight: 700;
 }
-.job-postdate {
-  grid-column-start: 1;
-  text-align: right;
-  color: var(--darkGrayishCyan);
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
 }
-.job-hours {
-  color: var(--darkGrayishCyan);
-}
-.job-hours::before {
-  color: var(--darkGrayishCyan);
-  content: "\00b7";
-  padding-right: 10px;
-}
+.job-postdate,
+.job-hours,
 .job-location {
   color: var(--darkGrayishCyan);
+  margin: 0 10px 0 0;
+  white-space: nowrap;
 }
+
+.job-hours::before,
 .job-location::before {
   color: var(--darkGrayishCyan);
   content: "\00b7";
-  padding-right: 10px;
+  margin: 0px 10px;
 }
+
 /* Skill tags */
 .skill-tag {
   color: var(--darkCyan);
