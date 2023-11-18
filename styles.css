@@ -98,6 +98,7 @@ body {
   color: var(--darkGrayishCyan);
   content: "\00b7";
   margin: 0px 10px;
+  padding-right: 5px;
 }
 
 /* Skill tags */
